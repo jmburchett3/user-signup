@@ -7,13 +7,13 @@
     </head>
     <body>
         <h1>User Signup Form</h1>
-            <form action='/' method='POST'>
+            <form method='POST'>
                 <table>
                     <tr>
                         <td><label for="email-address">Email (optional):</label></td>
                         <td>
                             <input id="email-address" type="text" name="email_address" />
-                            <span class="error"></span>
+                            <span class="error">{{email_error}}</span>
                         </td>
                     </tr>
                     <tr>
@@ -27,14 +27,14 @@
                         <td><label for="password">Password:</label></td>
                         <td>
                             <input id="password" type="password" name="user_password" />
-                            <span class="error"></span>
+                            <span class="error">{{password_error}}</span>
                         </td>
                     </tr>
                     <tr>
                         <td><label for="passwword-verify">Verify password:</label></td>
                         <td>
                             <input id="password-verify" type="password" name="password_verify" />
-                            <span class="error"></span>
+                            <span class="error">{{password_verify_error}}</span>
                         </td>
                     </tr>
                 </table>
